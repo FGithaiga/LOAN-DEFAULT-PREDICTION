@@ -27,7 +27,9 @@ The Loan Default Prediction dataset contains detailed information about loans is
 **Dataset Overview**
 
 Filename: Loan_default.csv
+
 Number of Entries: 255,347
+
 Number of Columns: 18
 
 **Columns**
