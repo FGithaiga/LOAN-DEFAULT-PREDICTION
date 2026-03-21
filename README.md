@@ -10,7 +10,7 @@ Loan default is a critical challenge for banks and other financial institutions.
 
 # OBJECTIVES
 
-1. To To understand the characteristics of customers who are more likely to default.
+1. Tounderstand the characteristics of customers who are more likely to default.
 
 2. To build predictive models that can classify future loan applicants as potential defaulters or non-defaulters.
 
