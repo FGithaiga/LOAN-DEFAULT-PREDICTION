@@ -35,22 +35,39 @@ Number of Columns: 18
 **Columns**
 
 LoanID: Unique identifier for each loan (object)
+
 Age: Age of the borrower (int)
+
 Income: Annual income of the borrower (int)
+
 LoanAmount: Amount of loan issued (int)
+
 CreditScore: Credit score of the borrower (int)
+
 MonthsEmployed: Number of months the borrower has been employed (int)
+
 NumCreditLines: Number of open credit lines the borrower has (int)
+
 InterestRate: Interest rate of the loan (float)
+
 LoanTerm: Term of the loan in months (int)
+
 DTIRatio: Debt-to-income ratio of the borrower (float)
+
 Education: Education level of the borrower (object)
+
 EmploymentType: Employment status of the borrower (object)
+
 MaritalStatus: Marital status of the borrower (object)
+
 HasMortgage: Indicates if the borrower has an existing mortgage (object)
+
 HasDependents: Indicates if the borrower has dependents (object)
+
 LoanPurpose: Purpose of the loan (object)
+
 HasCoSigner: Indicates if the loan has a cosigner (object)
+
 Default: Target variable indicating if the borrower defaulted (1) or not (0) (int)
 
 
