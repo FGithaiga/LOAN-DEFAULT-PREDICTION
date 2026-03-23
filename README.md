@@ -16,7 +16,11 @@ This project aims to build predictive models that can accurately classify borrow
 
 # OBJECTIVES
 
+<<<<<<< HEAD
 1. To analyze borrower demographic and financial characteristics influencing loan default.
+=======
+1. To understand the characteristics of customers who are more likely to default.
+>>>>>>> 43a59af17253c487d11197514533cc0800c78750
 
 2. To explore and analyze loan data to identify patterns and relationships between borrower attributes and loan defaults.
 
@@ -33,10 +37,19 @@ The dataset used in this project contains information about borrowers, their fin
 
 **Dataset Overview**
 
+<<<<<<< HEAD
 File Name: Loan_default.csv
+=======
+Filename: Loan_default.csv
+
+Number of Entries: 255,347
+
+Number of Columns: 18
+>>>>>>> 43a59af17253c487d11197514533cc0800c78750
 
 Number of Records: 255,347
 
+<<<<<<< HEAD
 Number of Features: 18
 
 The dataset includes demographic, financial, and loan-specific attributes that can influence the likelihood of default.
@@ -78,6 +91,43 @@ LoanPurpose – Purpose of the loan
 HasCoSigner – Indicates whether the loan has a cosigner
 
 Default – Target variable (1 = Default, 0 = No Default)
+=======
+LoanID: Unique identifier for each loan (object)
+
+Age: Age of the borrower (int)
+
+Income: Annual income of the borrower (int)
+
+LoanAmount: Amount of loan issued (int)
+
+CreditScore: Credit score of the borrower (int)
+
+MonthsEmployed: Number of months the borrower has been employed (int)
+
+NumCreditLines: Number of open credit lines the borrower has (int)
+
+InterestRate: Interest rate of the loan (float)
+
+LoanTerm: Term of the loan in months (int)
+
+DTIRatio: Debt-to-income ratio of the borrower (float)
+
+Education: Education level of the borrower (object)
+
+EmploymentType: Employment status of the borrower (object)
+
+MaritalStatus: Marital status of the borrower (object)
+
+HasMortgage: Indicates if the borrower has an existing mortgage (object)
+
+HasDependents: Indicates if the borrower has dependents (object)
+
+LoanPurpose: Purpose of the loan (object)
+
+HasCoSigner: Indicates if the loan has a cosigner (object)
+
+Default: Target variable indicating if the borrower defaulted (1) or not (0) (int)
+>>>>>>> 43a59af17253c487d11197514533cc0800c78750
 
 
 **DATA PREPROCESSING**
@@ -190,3 +240,15 @@ They should apply more advanced imbalance handling techniques such as SMOTE.
 Perform hyperparameter tuning to further improve model performance.
 Explore additional features such as borrower transaction history or repayment behavior.
 
+<<<<<<< HEAD
+=======
+Collect more data to improve prediction of default cases.
+
+Address class imbalance with techniques like SMOTE or weighted models to improve recall for defaults.
+
+Regularly retrain models to capture evolving borrower behaviors and economic conditions.
+
+3. For Stakeholders:
+
+Use these insights to guide lending policies, reduce financial risk, and optimize loan approval strategies.
+>>>>>>> 43a59af17253c487d11197514533cc0800c78750
