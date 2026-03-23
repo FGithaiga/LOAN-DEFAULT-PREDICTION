@@ -16,11 +16,11 @@ This project aims to build predictive models that can accurately classify borrow
 
 # OBJECTIVES
 
-<<<<<<< HEAD
+
 1. To analyze borrower demographic and financial characteristics influencing loan default.
-=======
+
 1. To understand the characteristics of customers who are more likely to default.
->>>>>>> 43a59af17253c487d11197514533cc0800c78750
+
 
 2. To explore and analyze loan data to identify patterns and relationships between borrower attributes and loan defaults.
 
@@ -37,19 +37,14 @@ The dataset used in this project contains information about borrowers, their fin
 
 **Dataset Overview**
 
-<<<<<<< HEAD
-File Name: Loan_default.csv
-=======
 Filename: Loan_default.csv
 
 Number of Entries: 255,347
 
 Number of Columns: 18
->>>>>>> 43a59af17253c487d11197514533cc0800c78750
 
 Number of Records: 255,347
 
-<<<<<<< HEAD
 Number of Features: 18
 
 The dataset includes demographic, financial, and loan-specific attributes that can influence the likelihood of default.
@@ -91,7 +86,7 @@ LoanPurpose – Purpose of the loan
 HasCoSigner – Indicates whether the loan has a cosigner
 
 Default – Target variable (1 = Default, 0 = No Default)
-=======
+
 LoanID: Unique identifier for each loan (object)
 
 Age: Age of the borrower (int)
@@ -127,7 +122,7 @@ LoanPurpose: Purpose of the loan (object)
 HasCoSigner: Indicates if the loan has a cosigner (object)
 
 Default: Target variable indicating if the borrower defaulted (1) or not (0) (int)
->>>>>>> 43a59af17253c487d11197514533cc0800c78750
+
 
 
 **DATA PREPROCESSING**
