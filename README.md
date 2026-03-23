@@ -224,13 +224,16 @@ Several important insights emerged from the analysis:
 # RECOMMENDATIONS
 
 **1. For Financial Institutions**
+
 Pay closer attention to borrowers with low credit scores and high debt-to-income ratios, as they present higher default risk.
 Implement predictive models such as Random Forest to assist in loan risk assessment and approval decisions.
 
 **2.For Stakeholders**
+
 Use these insights to guide lending policies,reduce financial risk,and optimize loan approval strategies.
 
 **3.For Persons intrested in the project (eg students)**
+
 They should apply more advanced imbalance handling techniques such as SMOTE.
 Perform hyperparameter tuning to further improve model performance.
 Explore additional features such as borrower transaction history or repayment behavior.
