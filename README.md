@@ -230,20 +230,9 @@ Implement predictive models such as Random Forest to assist in loan risk assessm
 **2.For Stakeholders**
 Use these insights to guide lending policies,reduce financial risk,and optimize loan approval strategies.
 
-**3.For Students**
+**3.For Persons intrested in the project (eg students)**
 They should apply more advanced imbalance handling techniques such as SMOTE.
 Perform hyperparameter tuning to further improve model performance.
 Explore additional features such as borrower transaction history or repayment behavior.
 
-<<<<<<< HEAD
-=======
-Collect more data to improve prediction of default cases.
 
-Address class imbalance with techniques like SMOTE or weighted models to improve recall for defaults.
-
-Regularly retrain models to capture evolving borrower behaviors and economic conditions.
-
-3. For Stakeholders:
-
-Use these insights to guide lending policies, reduce financial risk, and optimize loan approval strategies.
->>>>>>> 43a59af17253c487d11197514533cc0800c78750
