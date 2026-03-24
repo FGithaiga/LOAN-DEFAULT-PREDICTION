@@ -19,16 +19,16 @@ This project aims to build predictive models that can accurately classify borrow
 
 1. To analyze borrower demographic and financial characteristics influencing loan default.
 
-1. To understand the characteristics of customers who are more likely to default.
+2. To understand the characteristics of customers who are more likely to default.
 
 
-2. To explore and analyze loan data to identify patterns and relationships between borrower attributes and loan defaults.
+3. To explore and analyze loan data to identify patterns and relationships between borrower attributes and loan defaults.
 
-3. To build machine learning models that can classify borrowers as potential defaulters or non-defaulters.
+4. To build machine learning models that can classify borrowers as potential defaulters or non-defaulters.
 
-4. To build and evaluate machine learning models for loan default prediction.
+5. To build and evaluate machine learning models for loan default prediction.
 
-5. To provide actionable insights that can support better loan approval decisions.
+6. To provide actionable insights that can support better loan approval decisions.
 
 
 # DATASET DESCRIPTION
@@ -177,35 +177,43 @@ Categorical Feature Analysis
 Categorical features were explored using count plots and distribution comparisons. Certain employment types and loan purposes showed slightly higher default rates, suggesting that borrower profile characteristics can influence loan repayment behavior.
 
 
-# MODELING
+# MACHINE LEARNING
 
-Several machine learning models were built and evaluated to predict loan defaults.
+The loan default prediction task involves predicting whether a client will default (positive class) or not (negative class) based on their financial and demographic features. Due to the imbalanced nature of the dataset (many more non-defaults than defaults), special techniques were applied to improve model performance on the minority class.
 
-**Logistic Regression**
+**1. Data Preparation**
+The dataset was split into training (80%) and testing (20%) sets, stratified to preserve the class distribution.
 
-We used Logistic Regression as a baseline classification model. It estimated the probability of a borrower defaulting based on the input features. While it performed reasonably well, it struggled to correctly classify the minority default class due to class imbalance.
+Feature scaling was applied to ensure models that rely on distance metrics (e.g., Logistic Regression) perform optimally.
 
-**Decision Tree Classifier**
+**Handling Class Imbalance**
+SMOTE (Synthetic Minority Oversampling Technique) was used on the training data to generate synthetic examples of the minority class (defaults).
 
-The Decision Tree model captured non-linear relationships between variables and provided interpretable decision rules. However, without careful tuning, decision trees may overfit the training data.
+This prevents models from being biased toward predicting only non-defaults and improves recall for the positive class.
 
-**Random Forest Classifier**
+**3. Model Training**
 
-Random Forest, being an ensemble method that combines multiple decision trees, produced the best overall performance. It improved predictive accuracy and reduced overfitting by averaging predictions across multiple trees.
+Three baseline models were trained on the resampled data:
 
-# MODEL EVALUATION
+Logistic Regression – a linear model for binary classification.
 
-The models were evaluated using several performance metrics:
+Decision Tree Classifier – a tree-based model that splits features to separate classes.
 
-Accuracy – Measured overall correctness of predictions.
+Random Forest Classifier – an ensemble of decision trees that improves stability and reduces overfitting.
 
-Precision – Indicated how many predicted defaults were actually defaults.
+**4. Threshold Tuning**
+Default classification threshold (0.5) was adjusted to 0.4 for all models.
 
-Recall – Measured how well the model detects actual defaults.
+This was done to increase recall for the positive class, prioritizing the detection of potential defaults over minimizing false positives.
 
-F1 Score – Balanced precision and recall.
+**5. Model Evaluation**
 
-Overall model accuracy ranged between 68% and 70%, with Random Forest providing the best balance between performance metrics.
+Models were evaluated using precision, recall, F1-score, and confusion matrices.
+
+Recall was prioritized due to the high cost of missing defaults.
+
+Precision-Recall curves were plotted to compare model performance on the positive class.
+
 
 # KEY FINDINGS
 
@@ -231,11 +239,5 @@ Implement predictive models such as Random Forest to assist in loan risk assessm
 **2.For Stakeholders**
 
 Use these insights to guide lending policies,reduce financial risk,and optimize loan approval strategies.
-
-**3.For Persons intrested in the project (eg students)**
-
-They should apply more advanced imbalance handling techniques such as SMOTE.
-Perform hyperparameter tuning to further improve model performance.
-Explore additional features such as borrower transaction history or repayment behavior.
 
 
